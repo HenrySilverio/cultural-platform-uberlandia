@@ -1,41 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Uberlândia Cultural Platform 🎭🎨🎵
 
-## Getting Started
+![Platform Banner](https://cultural-platform-uberlandia.henrique-silverio.com/images/banner.jpg) 
 
-First, run the development server:
+[![Project Status](https://img.shields.io/badge/status-in%20development-brightgreen) ](https://cultural-platform-uberlandia.henrique-silverio.com/) 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg) ](LICENSE)
+[![SDGs](https://img.shields.io/badge/SDGs-4%2C%208%2C%2011-orange) ](https://sdgs.un.org/goals) 
 
-```bash
-npm run dev
-# or
+> Digital platform for promoting cultural, touristic, and artistic activities in the city of Uberlândia.
+
+## 📋 Table of Contents
+
+- [Overview](#-overview)
+- [Demo](#-demo)
+- [Features](#-features)
+- [Technologies](#-technologies)
+- [Installation and Usage](#-installation-and-usage)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [Sustainable Development Goals](#-sustainable-development-goals)
+- [License](#-license)
+- [Contact](#-contact)
+
+## 🌟 Overview
+
+The **Uberlândia Cultural Platform** is a project developed as part of the Innovation and Entrepreneurship Program, linked to the university extension activities of the Software Engineering course. The platform aims to centralize and facilitate access to information about cultural and artistic events in the city, as well as offer a space for independent artists to promote their work.
+
+The project is structured around three main pillars:
+
+1. **Tourism and Culture**: Mapping of tourist attractions and cultural centers
+2. **Cultural Agenda**: Calendar of cultural events with filtering system
+3. **Artist Space**: Area for independent artists to showcase their work
+
+## 🔍 Demo
+
+Access the platform at: [https://cultural-platform-uberlandia.henrique-silverio.com/](https://cultural-platform-uberlandia.henrique-silverio.com/) 
+
+![Platform Screenshot](https://cultural-platform-uberlandia.henrique-silverio.com/images/screenshot.jpg) 
+
+## ✨ Features
+
+- **Responsive Interface**: Adaptable design for mobile and desktop devices
+- **Dark/Light Mode**: Theme toggle for better accessibility
+- **Interactive Map**: Geographic visualization of cultural and tourist points
+- **Cultural Agenda**: Event calendar with filters by category, date, and location
+- **Artist Profile**: Space for artists to register their portfolio and events
+- **Search System**: Integrated search for events, locations, and artists
+- **Event Alerts**: Notifications about upcoming events of interest
+
+## 🛠️ Technologies
+
+- **Frontend**:
+  - [Next.js](https://nextjs.org/)  - React framework with server-side rendering
+  - [TypeScript](https://www.typescriptlang.org/)  - Typed JavaScript superset
+  - [Tailwind CSS](https://tailwindcss.com/)  - Utility-first CSS framework
+  - [next-themes](https://github.com/pacocoursey/next-themes)  - Theme support in Next.js
+
+- **Development Tools**:
+  - [Yarn](https://yarnpkg.com/)  - Package manager
+  - [ESLint](https://eslint.org/)  - Linter for JavaScript/TypeScript
+  - [Prettier](https://prettier.io/)  - Code formatter
+
+## 🚀 Installation and Usage
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)  (v14.0.0 or higher)
+- [Yarn](https://yarnpkg.com/)  (v1.22.0 or higher)
+
+### Installation Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/cultural-platform.git
+   cd cultural-platform
+Install dependencies:
+bash
+yarn install
+Run the development server:
+bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-# cultural-platform-uberlandia
+Access the application:
+Open your browser and go to http://localhost:3000
+Available Commands
+yarn dev - Starts the development server
+yarn build - Creates an optimized production build
+yarn start - Starts the production server
+yarn lint - Runs linting checks
+📁 Project Structure
+cultural-platform/
+├── public/                  # Static files (images, fonts) 
+├── src/
+│   ├── pages/               # Next.js pages (Pages Router)
+│   │   ├── _app.tsx         # Main App component
+│   │   ├── _document.tsx    # Custom HTML document
+│   │   ├── index.tsx        # Home page
+│   │   ├── tourism.tsx      # Tourism and Culture page
+│   │   ├── schedule.tsx     # Cultural Agenda page
+│   │   ├── entertainers.tsx # Artist Space page
+│   │   └── api/             # API routes
+│   ├── components/          # Reusable components
+│   │   ├── ui/              # Basic UI components
+│   │   ├── Navbar.tsx       # Navigation bar
+│   │   ├── Footer.tsx       # Footer
+│   │   └── ThemeProvider.tsx # Theme provider
+│   ├── styles/              # Styles
+│   ├── lib/                 # Utilities and helper functions
+│   ├── hooks/               # Custom hooks
+│   └── data/                # Simulated data
+├── tailwind.config.js       # Tailwind CSS configuration
+└── package.json             # Dependencies and scripts
+👥 Contributing
+Contributions are welcome! If you'd like to contribute to this project, follow these steps:
+Fork the project
+Create a branch for your feature (git checkout -b feature/new-feature)
+Commit your changes (git commit -m 'Add new feature')
+Push to the branch (git push origin feature/new-feature)
+Open a Pull Request
+🌍 Sustainable Development Goals
+This project is aligned with the following UN Sustainable Development Goals (SDGs):
+SDG 4 - Quality Education: Promoting access to culture and non-formal education
+SDG 8 - Decent Work and Economic Growth: Fostering the local creative economy
+SDG 11 - Sustainable Cities and Communities: Valuing the city's cultural heritage
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+📞 Contact
+Henrique Silvério - henrique.silverio@email.com
+Project Link: https://cultural-platform-uberlandia.henrique-silverio.com/
