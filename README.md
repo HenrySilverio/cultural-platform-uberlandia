@@ -161,7 +161,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-Henrique Silvério — henrique.silverio@email.com
+Henrique Silvério — silveriohenriqueb@gmail.com
 
 Project Link: https://cultural-platform-uberlandia.henrique-silverio.com/
 
