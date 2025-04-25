@@ -1,0 +1,8 @@
+{
+  "hosting": {
+    "site": "cultural-platform-uberlandia",
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": []
+  }
+}
