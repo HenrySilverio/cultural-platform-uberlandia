@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@/components/common/button/button.component";
 import { Card, CardContent } from "@/components/common/card/card.component";
 import { MapPin, Info, ExternalLink } from "lucide-react";

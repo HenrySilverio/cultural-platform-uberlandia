@@ -45,7 +45,7 @@ export default function Home() {
       <Head>
         <title>Plataforma Cultural Uberlândia</title>
         <meta name="description" content="Plataforma digital para divulgação de atividades culturais, turísticas e artísticas de Uberlândia" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cultural-favicon.svg" />
       </Head>
 
       {/* Hero Section com Carrossel */}

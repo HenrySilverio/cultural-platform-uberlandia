@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer/footer.component";
-import Navbar from "@/components/navbar/navbar.component";
-import { ThemeProvider } from "next-themes";
+import dynamic from "next/dynamic";
+
+// Importa os componentes cliente de forma dinâmica
+const DynamicThemeProvider = dynamic(
+  () =>
+    import("@/components/theme-provider/theme-provider.component").then(
+      (mod) => mod.ThemeProvider
+    ),
+  { ssr: false }
+);
+
+const Navbar = dynamic(
+  () => import("@/components/navbar/navbar.component"),
+  { ssr: false }
+);
+const Footer = dynamic(
+  () => import("@/components/footer/footer.component"),
+  { ssr: false }
+);
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,13 +31,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <ThemeProvider
+        <DynamicThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
@@ -32,7 +48,7 @@ export default function RootLayout({
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
-        </ThemeProvider>
+        </DynamicThemeProvider>
       </body>
     </html>
   );
